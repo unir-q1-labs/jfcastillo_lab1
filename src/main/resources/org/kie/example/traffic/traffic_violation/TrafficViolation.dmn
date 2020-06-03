@@ -70,7 +70,7 @@
           <dmn:text>"speed"</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_54D46909-FA1F-47E4-948D-3E4BEDB5422D">
-          <dmn:text>[10...29]</dmn:text>
+          <dmn:text>[10..30)</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_080485FF-EC17-4A7B-B9BB-2E68D1B26905">
           <dmn:text>500</dmn:text>
