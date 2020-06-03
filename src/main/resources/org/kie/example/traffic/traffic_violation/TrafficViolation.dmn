@@ -70,7 +70,7 @@
           <dmn:text>"speed"</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_54D46909-FA1F-47E4-948D-3E4BEDB5422D">
-          <dmn:text>[10...30)</dmn:text>
+          <dmn:text>[10-30)</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_080485FF-EC17-4A7B-B9BB-2E68D1B26905">
           <dmn:text>500</dmn:text>
@@ -127,10 +127,6 @@
     <dmn:extensionElements/>
     <dmn:variable id="_6892C2FE-BE68-4BF0-BE41-0F3A8A81E3F6" name="Driver" typeRef="tDriver"/>
   </dmn:inputData>
-  <dmn:inputData id="_93186DA0-9DE1-4008-BD5B-F9D91C9AE804" name="Violation">
-    <dmn:extensionElements/>
-    <dmn:variable id="_E61C72B7-ACAD-4143-894E-17C66AADFC16" name="Violation" typeRef="tViolation"/>
-  </dmn:inputData>
   <dmn:decision id="_DE084ED0-C296-4294-B72E-A1D62B757DAD" name="Should the driver be suspended?">
     <dmn:extensionElements/>
     <dmn:question>Should the driver be suspended due to points on his driver license?</dmn:question>
@@ -156,6 +152,10 @@
       </dmn:contextEntry>
     </dmn:context>
   </dmn:decision>
+  <dmn:inputData id="_93186DA0-9DE1-4008-BD5B-F9D91C9AE804" name="Violation">
+    <dmn:extensionElements/>
+    <dmn:variable id="_E61C72B7-ACAD-4143-894E-17C66AADFC16" name="Violation" typeRef="tViolation"/>
+  </dmn:inputData>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram>
       <di:extension>
@@ -171,13 +171,13 @@
           <kie:ComponentWidths dmnElementRef="_C0C0C583-3673-431E-9FD0-DCD9B4A2E3DE">
             <kie:width>50.0</kie:width>
             <kie:width>100.0</kie:width>
-            <kie:width>300.0</kie:width>
+            <kie:width>646.0</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_AA1DFFF0-F11D-4A16-A761-03A45BE2DC1B">
-            <kie:width>300.0</kie:width>
+            <kie:width>646.0</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_6BBF33EF-8B01-4067-9BA8-DF9AB8DE20BB">
-            <kie:width>300.0</kie:width>
+            <kie:width>646.0</kie:width>
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
@@ -199,15 +199,6 @@
         <dc:Bounds x="114" y="305" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
-      <dmndi:DMNShape id="dmnshape-_93186DA0-9DE1-4008-BD5B-F9D91C9AE804" dmnElementRef="_93186DA0-9DE1-4008-BD5B-F9D91C9AE804" isCollapsed="false">
-        <dmndi:DMNStyle>
-          <dmndi:FillColor red="255" green="255" blue="255"/>
-          <dmndi:StrokeColor red="0" green="0" blue="0"/>
-          <dmndi:FontColor red="0" green="0" blue="0"/>
-        </dmndi:DMNStyle>
-        <dc:Bounds x="383" y="361" width="100" height="50"/>
-        <dmndi:DMNLabel/>
-      </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_DE084ED0-C296-4294-B72E-A1D62B757DAD" dmnElementRef="_DE084ED0-C296-4294-B72E-A1D62B757DAD" isCollapsed="false">
         <dmndi:DMNStyle>
           <dmndi:FillColor red="255" green="255" blue="255"/>
@@ -215,6 +206,15 @@
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
         <dc:Bounds x="228" y="50" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-_93186DA0-9DE1-4008-BD5B-F9D91C9AE804" dmnElementRef="_93186DA0-9DE1-4008-BD5B-F9D91C9AE804" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="383" y="361" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-_1276B0C9-B3C0-4600-951E-08FCA9044FB8" dmnElementRef="_1276B0C9-B3C0-4600-951E-08FCA9044FB8">
